@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Altschool Africa Test</title>
+    <link href="assets/styles/index3.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <!--Logo-->
+        <a href="./">
+          <img
+            src="assets/images/logo.png"
+            alt="Altschool Africa Logo"
+            class="logo"
+          />
+        </a>
+        <!--Integral Navigation-->
+        <a href="./">Home</a>
+        <a href="./about/">About Page</a>
+      </nav>
+    </header>
+    <main class="main">
+      <h1>Home Page</h1>
+      <form action="/submit" method="post">
+        <!-- Personal Information Section -->
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required /><br /><br />
+
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required /><br /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+          
+          <label>Gender:</label>
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">Male</label><br />
+          <input type="radio" id="female" name="gender" value="female" required />
+          <label for="female">Female</label><br />
+          <input type="radio" id="other" name="gender" value="other" required />
+          <label for="other">Other</label><br /><br />
+
+          
+        </fieldset>
+
+        <!-- Account Information Section -->
+        <fieldset>
+          <legend>Account Information</legend>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required /><br /><br />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required /><br /><br />
+
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" required /><br /><br />
+        
+          <input type="checkbox" id="terms" name="terms" required />
+          <label for="terms">I agree to the terms and conditions</label><br /><br />
+        </fieldset>
+
+      
+      </form>
+    </main>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+    </script>
+  </body>
+</html>
